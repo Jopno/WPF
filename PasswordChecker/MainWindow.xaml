@@ -1,0 +1,22 @@
+﻿<Window x:Class="PwdChecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PwdChecker"
+        mc:Ignorable="d"
+        Title="Password Checker v0.1" Height="306.25" Width="429.203">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="265" VerticalAlignment="Top" Width="421">
+            <Label Content="Password to check:" FontSize="14"/>
+            <PasswordBox x:Name="pwdBox" Height="23"   FontSize="14" PasswordChanged="pwdBox_PasswordChanged" />
+            <TextBlock x:Name="txtcharCount" TextWrapping="Wrap" FontSize="14"><Run Text="-"/><Run Text="Char count"/></TextBlock>
+            <TextBlock x:Name="txtCapitalLetters" TextWrapping="Wrap" FontSize="14"><Run Text="-"/><Run Text="Capital letters"/></TextBlock>
+            <TextBlock x:Name="txtSmallLetters" TextWrapping="Wrap" FontSize="14"><Run Text="-"/><Run Text="Small letters"/></TextBlock>
+            <TextBlock x:Name="txtNumbers" TextWrapping="Wrap" FontSize="14"><Run Text="-"/><Run Text="Numbers"/></TextBlock>
+            <TextBlock x:Name="txtSpecial" TextWrapping="Wrap" FontSize="14"><Run Text="-"/><Run Text="Special chars"/></TextBlock>
+            <Label x:Name="txtCheckMessage" Content="Enter password" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center" Background="#FF686767" Foreground="White"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
